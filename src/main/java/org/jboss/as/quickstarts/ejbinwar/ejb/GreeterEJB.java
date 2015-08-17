@@ -86,7 +86,7 @@ public class GreeterEJB {
             /*JsonNode response = target.request().get(JsonNode.class);
             users = mapper.readValue(
                     mapper.treeAsTokens(response),
-                    new TypeReference<HashSet<String>>(){ }
+                    new TypeReference<HashSet<UserInfo>>(){ }
             );*/
             Response response = target.request().get();
             users = response.readEntity(Set.class);

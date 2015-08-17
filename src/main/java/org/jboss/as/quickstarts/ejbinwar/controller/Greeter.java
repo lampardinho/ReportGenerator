@@ -96,7 +96,7 @@ public class Greeter implements Serializable {
         }
         catch (Exception ex)
         {
-            ex.printStackTrace();
+            //ex.printStackTrace();
         }
         finally
         {
